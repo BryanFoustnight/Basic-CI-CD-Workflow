@@ -7,7 +7,7 @@ on:
       - main
   pull_request:
     branches:
-      - main
+      - any
 
 # 2. What should it do?
 jobs:
