@@ -2,9 +2,8 @@ name: My First Pipeline
 
 # 1. When should this run?
 on:
-#   Trigger the workflow on push or pull request events
+#   Trigger the workflow on push
   push:
-  pull_request:
 
 # 2. What should it do?
 jobs:
