@@ -1,0 +1,21 @@
+name: My First Pipeline
+
+# 1. When should this run?
+on:
+#   Trigger the workflow on push
+  push:
+
+# 2. What should it do?
+jobs:
+  build-and-test:
+    # The operating system it runs on
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Step A: Download your repository's code to the server
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      # Step B: Run a custom command
+      - name: Run a greeting
+        run: echo "Hello! The pipeline is working."
